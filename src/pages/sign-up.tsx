@@ -26,8 +26,8 @@ const SignUp = () => {
 
   const [countries, setCountries] = useState<Data[]>([]);
   const [states, setStates] = useState<Data[]>([]);
-  const [countryLoading, setCountryLoading] = useState<boolean>(true);
-  const [stateLoading, setStateLoading] = useState<boolean>(true);
+  // const [countryLoading, setCountryLoading] = useState<boolean>(true);
+  // const [stateLoading, setStateLoading] = useState<boolean>(true);
 
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
@@ -72,7 +72,7 @@ const SignUp = () => {
       },
     ]);
 
-    setCountryLoading(false);
+    // setCountryLoading(false);
   }, []);
 
   useEffect(() => {
@@ -97,7 +97,7 @@ const SignUp = () => {
       },
     ]);
 
-    setStateLoading(false);
+    // setStateLoading(false);
   }, []);
 
   return (
